@@ -1,0 +1,445 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* Landing page*/
+
+.landingPage__container {
+	/*scroll-behavior: smooth;*/
+}
+
+.landingPage__home {
+	position: fixed;
+}
+
+.landingPage__text {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 80%;
+}
+
+.landingPage__text h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.landingPage__button {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 90%;
+}
+
+.landingPage__button button{
+	border: none;
+    background: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+canvas{
+    background-color: #1c1b1d;
+}
+
+/* NAV bar*/
+
+nav {
+	position: fixed;
+	width: 100%;
+	background: #1b1a1a0a 0% 0% no-repeat padding-box;
+	z-index: 1500;
+}
+
+.navbar__ul {
+	list-style-type: none;
+	margin-right:100px;
+	/*padding: 0;*/
+	overflow: hidden;
+	text-align: center;
+}
+
+.navbar__ul li {
+	display: inline-block;
+}
+
+.navbar__ul li a {
+	display: block;
+	color: #c7c7c76b;
+	text-align: center;
+	padding: 0px 70px;
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar__ul li a span{
+	font-size: 2.5rem;
+	margin: 13px;
+	position: relative;
+	top: 6px;
+	font-weight: bold;
+}
+
+.navbar__ul li a:hover{
+	color: white;
+	transform: scale(1.2);
+}
+
+.navbar__ul .main-navbar__icon{
+	display: none;
+}
+
+.nav__selected {
+	color: white !important;
+	transform: scale(1.2);
+}
+
+
+
+/* Landing page HEllO text */
+section {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.landingPage__hello-header {
+	position: absolute;
+	left: 35%;
+	top: 15%;
+}
+
+.landingPage__brands-header {
+	position: absolute;
+	left: 30%;
+	top: 25%;
+}
+
+.landingPage__hello-header h2{
+	font-size: 5rem;
+	text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-shadow: 4px 3px 6px #1c1b1d;
+    font-weight: bold;
+}
+
+.landingPage__brands-header h2{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    text-shadow: 1px 2px 3px #1c1b1d;
+    font-weight: bold;
+}
+
+.landingPage__hello-container {
+	position: relative;
+	width: 100%;
+	top: 1080px;
+	background: white;
+}
+
+.landingPage__hello-vertivalLine {
+	position: absolute;
+	left: 35%;
+	top: 45%;
+}
+
+.landingPage__hello-bar {
+	height: 300px;
+	border-left: 20px solid #1c1b1d; 
+}
+
+/* landingPage__capabilities*/
+.landingPage__capabilities-container {
+	position: absolute;
+	top: 40%;
+	left: 27%;
+	width: 65%;
+	height: auto;
+
+	/*add grid style*/
+	 display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-auto-rows: minmax(10px,250px);
+    grid-template-areas: "header content";
+}
+
+.cap__boxlist1 {
+	/*width: 26%;
+	height: 300px;
+	margin: 20px;*/
+	box-sizing: border-box;
+}
+
+.cap__boxlist1 ul{
+	font-size: 1.5rem;
+}
+
+.cap__boxlist1 ul li{
+	list-style: none;
+	font-size: 1rem;
+	padding: 3px;
+}
+
+/*landingPage__brands*/
+
+.landingPage__brands-container {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	width: 65%;
+	height: auto;
+	background: #1c1b1d;
+}
+
+.landingPage__brands-container img {
+	margin: 3rem 5rem;
+	width: 80%;
+	height: 50%;
+}
+
+/* LandingPage__Global presence*/
+.landingPage__global-container {
+	position: absolute;
+	top: 45%;
+	left: 27%;
+	width: 65%;
+	height: auto;
+
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+}
+
+.global__boxlist1 {
+	width: 30%;
+	height: 300px;
+	margin: 5px;
+	box-sizing: border-box;
+}
+
+.global__boxlist1 ul li{
+	list-style: none;
+	font-size: 1.3rem;
+	padding: 3px;
+	text-transform: uppercase;
+}
+
+.global__boxlist1 span{
+	font-size: 25px;
+	margin: 25px;
+	text-transform: uppercase;
+}
+
+.global__countries {
+	font-size: 56px;
+	margin: 10px;
+	padding:30px;
+}
+
+.global__countriesBox span{
+	font-size: 16px;
+}
+
+
+/* landing page side menu*/
+.landingPage__sideMenu {
+	position: absolute;
+	top: 15%;
+	left: 0;
+	height: 100vh;
+}
+
+.landingPage__sideMenu ul {
+	list-style: none;
+	display: block;
+	font-size: 1.6rem;
+	width: 500px;
+	letter-spacing: 5px;
+	padding: 0;
+}
+
+.landingPage__sideMenu li {
+	padding: 10%;
+	width: 10%;
+}
+
+#sidemenu__list1 {
+	border-left: 20px solid #1c1b1d;
+}
+
+#sidemenu__list1,
+#sidemenu__list2,
+#sidemenu__list3,
+#sidemenu__list4 {
+	cursor: pointer;
+}
+
+#sidemenu__list1:hover,
+#sidemenu__list2:hover,
+#sidemenu__list3:hover,
+#sidemenu__list4:hover {
+	width: 300px;
+	border-left: 20px solid #1c1b1d !important;
+}
+
+#sideContent__list2,
+#sideContent__list3,
+#sideContent__list4 {
+	visibility: hidden;
+}
+/* landing page hello.*/
+
+.helloPage__text {
+	position: absolute;
+    top: 0px;
+    left: 50px;
+    width: 870px;
+    margin: 15px;
+}
+
+.helloPage__text p {
+	color: #1c1b1d;
+	text-align: left;
+	font-size: 1.4rem;
+	letter-spacing: 4px;
+}
+
+
+
+
+.mouse-container {
+	position: relative;
+	bottom: 10%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.mouse {
+	width: 30px;
+	height: 50px;
+	border-radius: 30px;
+	border: 5px solid rgba(255, 255, 255, .8);
+}
+
+.mouse:after {
+		content: '';
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #fff;
+		animation: scroll 1s infinite alternate;
+	}
+	@keyframes scroll {
+			100% {transform: translate(-50%, 15px)}
+		}
+
+
+.landingPage__loading-background {
+	width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 150px;
+}
+
+.st0 {
+	animation: text 1.5s 1;
+}
+
+@keyframes text {
+	0% {
+		opacity: 0.2;
+	}
+
+	50% {
+		opacity: 0.7;
+		transform: translateX(40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.st11,.st14,.st17,.st20,
+.st12,.st15,.st18,.st21,
+.st13,.st16,.st19,.st22
+{
+/*opacity: 0;*/
+}
+
+.st11 {
+	animation:test 0.5s 1 ease;
+}
+
+.st12 {
+	animation:test 1.5s 1;
+	/*animation-delay: .2s;*/
+}
+.st13 {
+	animation:test 1.6s 1;
+	/*animation-delay: .3s;*/
+}
+.st14 {
+	animation:test 0.5s 1;
+	/*animation-delay: .2s;*/
+}
+.st15 {
+	animation:test 1.5s 1;
+	/*animation-delay: .2s;*/
+}
+.st16 {
+	animation:test 1.6s 1;
+	/*animation-delay: .2s;*/
+}
+.st17 {
+	animation:test 1.7s 1;
+	/*animation-delay: .3s;*/
+}
+.st18 {
+	animation:test 0.5s 1;
+	/*animation-delay: .3s;*/
+}
+.st19 {
+	animation:test 1.5s 1;
+	/*animation-delay: .2s;*/
+}
+.st20 {
+	animation:test 1.6s 1;
+	/*animation-delay: .2s;*/
+}
+
+.st21 {
+	animation:test 1.7s 1;
+	/*animation-delay: .3s;*/
+}
+
+.st22 {
+	animation:test 1.8s 1;
+	/*animation-delay: .2s;*/
+}
+
+
+@keyframes test {
+	from {
+		opacity: 0;
+		transform: skewY(10deg);
+	}
+	to {
+		opacity: 1;
+		transform: skewY(0deg);
+	}
+}
