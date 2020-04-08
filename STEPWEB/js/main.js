@@ -15,6 +15,9 @@ function mainNarbarFunction() {
   }
 }
 
+$(".global__countries").counterUp({delay:30,time:1500});
+
+
 
 var canvas = document.getElementById('nokey'),
    can_w = parseInt(canvas.getAttribute('width')),
