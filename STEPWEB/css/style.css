@@ -33,22 +33,86 @@ html,body {
 
 .landingPage__button {
 	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 90%;
+	top: 85%;
+	right: 53px;
+	border:none;
 }
 
 .landingPage__button button{
-	border: none;
+	/*border: none;
     background: none;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: uppercase;*/
+    background: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 1.1rem;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  cursor: pointer;
 }
 
 canvas{
     background-color: #1c1b1d;
+}
+
+/* background loop text */
+#background__looptext {
+  color:#999;
+  text-transform: uppercase;
+  font-size:46px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:relative;
+  width:100%;
+  margin-left: 40px;
+  bottom:55%;
+  display:block;
+}
+
+#background__flip {
+  height: 70px;
+  overflow:hidden;
+}
+
+#background__flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:35px;
+  margin-bottom:50px;
+  display:inline-block;
+}
+
+#background__flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#background__flip div div {
+  background:#F26451;
+}
+#background__flip div:first-child div {
+  background:#F26451;
+}
+#background__flip div:last-child div {
+  background:#F26451;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
 }
 
 /* NAV bar*/
@@ -115,6 +179,49 @@ section {
 	height: 100vh;
 }
 
+.landingPage__backgroundtext {
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+}
+
+.landingPage__backgroundtext div:nth-child(1) {
+	position: relative;
+    left: 42%;
+    font-size: 100px;
+    color: #f7f7f7;
+    animation:backgroundtext 10s infinite ease-in;
+}
+
+.landingPage__backgroundtext div:nth-child(2) {
+	position: relative;
+    left: 0%;
+    transform: translate(60px, 54px);
+    font-size: 100px;
+    color: #f7f7f7;
+    animation:backgroundtext 10s infinite ease-in;
+}
+
+.landingPage__backgroundtext div:nth-child(3) {
+	position: relative;
+    transform: translate(66px, -180px);
+    left: 50%;
+    font-size: 100px;
+    color: #f7f7f7;
+    animation:backgroundtext 10s infinite ease-in;
+}
+
+@keyframes backgroundtext {
+	from {
+		opacity: 0.8;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+
 .landingPage__hello-header {
 	position: relative;
 	margin-left: 200px;
@@ -128,7 +235,6 @@ section {
 }
 
 .sideContent__box1 {
-    transform: skew(40deg);
     background: #5555551f;
     height: 354px;
 }
@@ -179,6 +285,8 @@ section {
 	margin: 15px;
 }
 
+.landingPage__button button,
+.landingPage__button button::after,
 .helloPage__button button,
 .helloPage__button button::after {
   -webkit-transition: all 0.3s;
@@ -202,6 +310,8 @@ section {
   cursor: pointer;
 }
 
+.landingPage__button button::before,
+.landingPage__button button::after,
 .helloPage__button button::before,
 .helloPage__button button::after {
   background: #F26451;
@@ -210,10 +320,12 @@ section {
   z-index: -1;
 }
 
+.landingPage__button button:hover,
 .helloPage__button button:hover {
   color: white;
 }
 
+.landingPage__button button::after,
 .helloPage__button button::after {
   height: 100%;
   left: 0;
@@ -221,6 +333,7 @@ section {
   width: 0;
 }
 
+.landingPage__button button:hover:after,
 .helloPage__button button:hover:after {
   width: 100%;
 }
@@ -230,6 +343,28 @@ section {
 .landingPage__capabilities-container {
 	display: none;
 }
+
+.landingPage__cap-header {
+	position: relative;
+	text-align: center;
+}
+
+.landingPage__cap-header span{
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.landingPage__cap-header span:nth-child(1) {
+	color: #8e8e8e;
+	font-size: 50px;
+}
+
+.landingPage__cap-header span:nth-child(2) {
+	color: #8e8e8e;
+	font-size: 80px;
+}
+
 
 /* landing page side menu*/
 .cap__container {
@@ -247,11 +382,12 @@ section {
 .sideContent__box2 {
     background: #1c1b1d;
     height: 450px;
+    position: relative;
 }
 
 .sideContent__box2 h2{
     font-size: 2.5rem;
-    padding-top: 15px;
+    padding-top: 35px;
     left: 5%;
     position: relative;
     color: white;
@@ -269,6 +405,36 @@ section {
 	margin:10px;
 }
 
+.sideContent__img {
+	position: absolute;
+	width: 100%;
+	/*overflow: hidden;*/
+	left: 48%;
+	top: 20%;
+}
+
+.sideContent__img img {
+	width: 40%;
+}
+
+.capfloat {
+	animation:float 3s ease-in-out infinite normal none running;
+}
+
+@keyframes float {
+	0%{
+	    transform: translatey(0);	
+}
+
+50% {
+    -webkit-transform: translatey(-20px);
+    transform: translatey(-20px);
+}
+100% {
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+}
+}
 
 .landingPage__sideMenu {
 	position: relative;
@@ -390,6 +556,72 @@ section {
 	font-size: 16px;
 }
 
+/** main global impact**/
+
+.main__globalimpact .container {
+    margin: 0 auto;
+}
+
+.section-heading__globalimpact {
+	text-align: center;
+}
+
+.global__counter{
+	position: relative;
+}
+
+.section-heading__globalimpact h1 {
+	margin: 0;
+	font-size: 5.5em;
+	font-family: "Roboto", sans-serif;
+	color: #43d1d0;
+	text-align: left;
+	font-weight: 500;
+	padding-left: 150px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+
+.section-heading__globalimpact span {
+	margin: 0;
+    font-size: 2.5em;
+    font-family: "Roboto", sans-serif;
+    color: #43d1d0;
+    text-align: left;
+    font-weight: 500;
+    padding-left: 150px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 44%;
+    left: 140px;
+}
+
+.section-heading__globalimpact h3 {
+	color: #141414;
+	font-size: 2.75em;
+	padding-top: 40px;
+	margin:0;
+    padding-bottom: 25px;
+	font-weight: 100;
+	text-align: left;
+    padding-left: 150px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.globalimpact__imglarge {
+	width: 70%;
+	padding-right: 130px;
+	padding-bottom: 5rem;
+}
+
+.globalimpact__imgsmall {
+	display: none;
+}
+
+
+
+
 
 .landingPage__loading-background {
 	width: 50%;
@@ -398,7 +630,7 @@ section {
     top: 150px;
 }
 
-.st0 {
+/*.st0 {
 	animation: text 1.5s 1;
 }
 
@@ -422,7 +654,6 @@ section {
 .st12,.st15,.st18,.st21,
 .st13,.st16,.st19,.st22
 {
-/*opacity: 0;*/
 }
 
 .st11 {
@@ -431,49 +662,38 @@ section {
 
 .st12 {
 	animation:test 1.5s 1;
-	/*animation-delay: .2s;*/
 }
 .st13 {
 	animation:test 1.6s 1;
-	/*animation-delay: .3s;*/
 }
 .st14 {
 	animation:test 0.5s 1;
-	/*animation-delay: .2s;*/
 }
 .st15 {
 	animation:test 1.5s 1;
-	/*animation-delay: .2s;*/
 }
 .st16 {
 	animation:test 1.6s 1;
-	/*animation-delay: .2s;*/
 }
 .st17 {
 	animation:test 1.7s 1;
-	/*animation-delay: .3s;*/
 }
 .st18 {
 	animation:test 0.5s 1;
-	/*animation-delay: .3s;*/
 }
 .st19 {
 	animation:test 1.5s 1;
-	/*animation-delay: .2s;*/
 }
 .st20 {
 	animation:test 1.6s 1;
-	/*animation-delay: .2s;*/
 }
 
 .st21 {
 	animation:test 1.7s 1;
-	/*animation-delay: .3s;*/
 }
 
 .st22 {
 	animation:test 1.8s 1;
-	/*animation-delay: .2s;*/
 }
 
 
@@ -486,7 +706,8 @@ section {
 		opacity: 1;
 		transform: skewY(0deg);
 	}
-}
+}*/
+
 
 /** Footer CSS Start here **/
 .footer {

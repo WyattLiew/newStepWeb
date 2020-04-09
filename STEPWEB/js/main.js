@@ -15,7 +15,7 @@ function mainNarbarFunction() {
   }
 }
 
-$(".global__countries").counterUp({delay:30,time:1500});
+$(".global__countries").counterUp({delay:30,time:2500});
 
 
 
