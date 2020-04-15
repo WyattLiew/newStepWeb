@@ -33,7 +33,7 @@ sidemenu__list5.addEventListener("click", function(e) {
 
 function hideandshow (input) {
 	if(input==1) {
-		sidemenu__list1.style.borderLeft = `20px solid #1c1b1d`;
+		sidemenu__list1.style.borderLeft = `20px solid #43D1D2`;
 		sidemenu__list2.style.borderLeft = `none`;
 		sidemenu__list3.style.borderLeft = `none`;
 		sidemenu__list4.style.borderLeft = `none`;
@@ -54,7 +54,7 @@ function hideandshow (input) {
 		sidemenu__list3.style.borderLeft = `none`;
 		sidemenu__list4.style.borderLeft = `none`;
 		sidemenu__list5.style.borderLeft = `none`;
-		sidemenu__list2.style.borderLeft = `20px solid #1c1b1d`;
+		sidemenu__list2.style.borderLeft = `20px solid #06B3AD`;
 	}else if(input==3) {
 	hideContent_1();
 	hideContent_2();
@@ -65,7 +65,7 @@ function hideandshow (input) {
 	sidemenu__list2.style.borderLeft = `none`;
 	sidemenu__list4.style.borderLeft = `none`;
 	sidemenu__list5.style.borderLeft = `none`;
-	sidemenu__list3.style.borderLeft = `20px solid #1c1b1d`;
+	sidemenu__list3.style.borderLeft = `20px solid #23A4C1`;
 	}
 	else if(input==4) {
 	hideContent_1();
@@ -77,7 +77,7 @@ function hideandshow (input) {
 	sidemenu__list2.style.borderLeft = `none`;
 	sidemenu__list3.style.borderLeft = `none`;
 	sidemenu__list5.style.borderLeft = `none`;
-	sidemenu__list4.style.borderLeft = `20px solid #1c1b1d`;
+	sidemenu__list4.style.borderLeft = `20px solid #4782BC`;
 
 	}
 	else if(input==5) {
@@ -90,7 +90,7 @@ function hideandshow (input) {
 	sidemenu__list2.style.borderLeft = `none`;
 	sidemenu__list3.style.borderLeft = `none`;
 	sidemenu__list4.style.borderLeft = `none`;
-	sidemenu__list5.style.borderLeft = `20px solid #1c1b1d`;
+	sidemenu__list5.style.borderLeft = `20px solid #7F65BC`;
 
 	}
 }

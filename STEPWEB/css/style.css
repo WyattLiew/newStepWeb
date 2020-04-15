@@ -17,23 +17,16 @@ html,body {
 	height:100vh;
 }
 
-
-.landingPage__text {
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 80%;
-}
-
-.landingPage__text h2 {
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
+.landingPage__loading-background {
+	width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 45px;
 }
 
 .landingPage__button {
 	position: absolute;
-	top: 85%;
+	bottom: 5%;
 	right: 53px;
 	border:none;
 }
@@ -69,11 +62,11 @@ canvas{
   text-transform: uppercase;
   font-size:46px;
   font-weight:bold;
-  padding-top:200px;  
-  position:relative;
-  width:100%;
-  margin-left: 40px;
-  bottom:55%;
+  /*padding-top:200px;  */
+  position:absolute;
+  width:75%;
+  margin-left: 3%;
+  bottom:5%;
   display:block;
 }
 
@@ -84,7 +77,7 @@ canvas{
 
 #background__flip > div > div {
   color:#fff;
-  padding:4px 12px;
+  /*padding:0px 12px;*/
   height:35px;
   margin-bottom:50px;
   display:inline-block;
@@ -94,7 +87,7 @@ canvas{
   animation: show 5s linear infinite;
 }
 
-#background__flip div div {
+/*#background__flip div div {
   background:#F26451;
 }
 #background__flip div:first-child div {
@@ -102,7 +95,7 @@ canvas{
 }
 #background__flip div:last-child div {
   background:#F26451;
-}
+}*/
 
 @keyframes show {
   0% {margin-top:-270px;}
@@ -224,7 +217,7 @@ section {
 
 .landingPage__hello-header {
 	position: relative;
-	margin-left: 200px;
+	margin-left: 20%;
 	padding-top: 100px;
 }
 
@@ -254,11 +247,11 @@ section {
 
 .landingPage__hello-vertivalLine {
 	position: relative;
-	margin-left: 200px;
+	margin-left: 20%;
 }
 
 .landingPage__hello-bar {
-	height: 300px;
+	height: 200px;
 	border-left: 20px solid #1c1b1d; 
 }
 
@@ -280,8 +273,8 @@ section {
 
 .helloPage__button {
 	position: absolute;
-	bottom: 40px;
-	right: 30%;
+	padding-top: 50px;
+	right: 5%;
 	margin: 15px;
 }
 
@@ -301,7 +294,7 @@ section {
   border-radius: 5px;
   color: #1c1b1d;
   display: block;
-  font-size: 0.8em;
+  font-size: 1.3rem;
   font-weight: bold;
   padding: 2em 6em;
   position: relative;
@@ -310,7 +303,7 @@ section {
   cursor: pointer;
 }
 
-.landingPage__button button::before,
+/*.landingPage__button button::before,
 .landingPage__button button::after,
 .helloPage__button button::before,
 .helloPage__button button::after {
@@ -318,11 +311,11 @@ section {
   content: '';
   position: absolute;
   z-index: -1;
-}
+}*/
 
 .landingPage__button button:hover,
 .helloPage__button button:hover {
-  color: white;
+  color: #43D1D2;
 }
 
 .landingPage__button button::after,
@@ -340,13 +333,17 @@ section {
 
 
 /* landingPage__capabilities*/
+.landingPage__services-container {
+	overflow: hidden;
+}
+
 .landingPage__capabilities-container {
 	display: none;
 }
 
 .landingPage__cap-header {
 	position: relative;
-	text-align: center;
+	left: 10%;
 }
 
 .landingPage__cap-header span{
@@ -374,15 +371,35 @@ section {
 
 .sideContent__boxContainer2 {
 	position: absolute;
-    top: 15%;
+    top: 0%;
     right: 0;
     width: 75%;
 }
 
 .sideContent__box2 {
-    background: #1c1b1d;
+	background: #1c1b1d !important;
     height: 450px;
     position: relative;
+}
+
+.bgc-1 {
+	color: #43D1D2;
+}
+
+.bgc-2 {
+	color: #06B3AD;
+}
+
+.bgc-3 {
+	color: #23A4C1;
+}
+
+.bgc-4 {
+	color: #4782BC;
+}
+
+.bgc-5 {
+	color: #7F65BC;
 }
 
 .sideContent__box2 h2{
@@ -401,7 +418,6 @@ section {
 	list-style: none;
 	font-size: 1.4rem;
 	padding: 5px;
-	color: grey;
 	margin:10px;
 }
 
@@ -444,19 +460,18 @@ section {
 .landingPage__sideMenu ul {
 	list-style: none;
 	display: block;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	width: 350px;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	padding: 0;
 }
 
 .landingPage__sideMenu li {
 	padding: 10%;
-	width: 10%;
 }
 
 #sidemenu__list1 {
-	border-left: 20px solid #1c1b1d;
+	border-left: 20px solid #43D1D2;
 }
 
 #sidemenu__list1,
@@ -467,12 +482,20 @@ section {
 	cursor: pointer;
 }
 
-#sidemenu__list1:hover,
-#sidemenu__list2:hover,
-#sidemenu__list3:hover,
-#sidemenu__list4:hover,
+#sidemenu__list1:hover{
+border-left: 20px solid #43D1D2 !important;
+}
+#sidemenu__list2:hover{
+border-left: 20px solid #06B3AD !important;
+}
+#sidemenu__list3:hover{
+border-left: 20px solid #23A4C1 !important;
+}
+#sidemenu__list4:hover{
+	border-left: 20px solid #4782BC !important;
+}
 #sidemenu__list5:hover {
-	border-left: 20px solid #1c1b1d !important;
+	border-left: 20px solid #7F65BC !important;
 }
 
 #sideContent__list2,
@@ -480,6 +503,107 @@ section {
 #sideContent__list4,
 #sideContent__list5 {
 	visibility: hidden;
+}
+
+
+
+/* Landingpage__ourwork */
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float:right;
+}
+
+.landingPage__ourwork-Container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.landingPage__box-Container {
+	position: relative;
+	width: 80%;
+	padding-top: 100px;
+	overflow: hidden;
+}
+
+.sideContent__box-left {
+	height: 520px;
+	background: #01001b;
+	position: relative;
+}
+
+.sideContent__box-right {
+	height: 520px;
+	background: #1c1b1d;
+	position: relative;
+	right: 0;
+}
+
+
+
+.landingPage__ourwork-header {
+	position: relative;
+	left: 70%;
+}
+
+.landingPage__ourwork-header span{
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.landingPage__ourwork-header span:nth-child(1) {
+	color: #8e8e8e;
+	font-size: 50px;
+}
+
+.landingPage__ourwork-header span:nth-child(2) {
+	color: #8e8e8e;
+	font-size: 80px;
+}
+
+.video__container {
+	position: absolute;
+	left: 10%;
+	top: 0%;
+	width:  355px;
+}
+
+.video__container-right {
+	position: relative;
+	top: -15%;
+	width:  355px;
+	padding-right: 70px;
+	float: right;
+}
+
+#video {
+	width: 100%;
+}
+
+.ourwork__header {
+	position: relative;
+	float: right;
+	padding-right: 70px;
+	top: 15%;
+}
+
+.ourwork__header-right {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+}
+
+.ourwork__header-right h1,
+.ourwork__header h1 {
+	font-size: 120px;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 /*landingPage__brands*/
@@ -504,7 +628,7 @@ section {
 .landingPage__brands-header {
 	position: relative;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 70px;
 }
 
 .landingPage__brands-header h2{
@@ -618,96 +742,6 @@ section {
 .globalimpact__imgsmall {
 	display: none;
 }
-
-
-
-
-
-.landingPage__loading-background {
-	width: 50%;
-    position: absolute;
-    left: 25%;
-    top: 150px;
-}
-
-/*.st0 {
-	animation: text 1.5s 1;
-}
-
-@keyframes text {
-	0% {
-		opacity: 0.2;
-	}
-
-	50% {
-		opacity: 0.7;
-		transform: translateX(40px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.st11,.st14,.st17,.st20,
-.st12,.st15,.st18,.st21,
-.st13,.st16,.st19,.st22
-{
-}
-
-.st11 {
-	animation:test 0.5s 1 ease;
-}
-
-.st12 {
-	animation:test 1.5s 1;
-}
-.st13 {
-	animation:test 1.6s 1;
-}
-.st14 {
-	animation:test 0.5s 1;
-}
-.st15 {
-	animation:test 1.5s 1;
-}
-.st16 {
-	animation:test 1.6s 1;
-}
-.st17 {
-	animation:test 1.7s 1;
-}
-.st18 {
-	animation:test 0.5s 1;
-}
-.st19 {
-	animation:test 1.5s 1;
-}
-.st20 {
-	animation:test 1.6s 1;
-}
-
-.st21 {
-	animation:test 1.7s 1;
-}
-
-.st22 {
-	animation:test 1.8s 1;
-}
-
-
-@keyframes test {
-	from {
-		opacity: 0;
-		transform: skewY(10deg);
-	}
-	to {
-		opacity: 1;
-		transform: skewY(0deg);
-	}
-}*/
-
 
 /** Footer CSS Start here **/
 .footer {
