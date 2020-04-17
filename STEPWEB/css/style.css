@@ -52,6 +52,12 @@ html,body {
   cursor: pointer;
 }
 
+.landingPage__button button a{
+	text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
 canvas{
     background-color: #1c1b1d;
 }
@@ -157,6 +163,7 @@ nav {
 	display: none;
 	color: #adaaaa;
 	background: #1c1b1d;
+	    border-radius: 10px;
 }
 
 .nav__selected {
@@ -167,10 +174,10 @@ nav {
 
 
 /* Landing page HEllO text */
-section {
+/*section {
 	width: 100%;
 	height: 100vh;
-}
+}*/
 
 .landingPage__backgroundtext {
 	position: absolute;
@@ -242,6 +249,7 @@ section {
 .landingPage__hello-container {
 	position: relative;
 	width: 100%;
+	height: 100vh;
 	background: white;
 }
 
@@ -274,8 +282,7 @@ section {
 .helloPage__button {
 	position: absolute;
 	padding-top: 50px;
-	right: 5%;
-	margin: 15px;
+	right: 10%;
 }
 
 .landingPage__button button,
@@ -288,6 +295,13 @@ section {
 	transition: all 0.3s;
 }
 
+
+.helloPage__button button a{
+	text-decoration: none;
+    color: #1c1b1d;
+    padding-right: 10px;
+}
+
 .helloPage__button button {
   background: none;
   border: none;
@@ -296,7 +310,6 @@ section {
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 2em 6em;
   position: relative;
   text-transform: uppercase;
   z-index: 1;
@@ -314,7 +327,9 @@ section {
 }*/
 
 .landingPage__button button:hover,
-.helloPage__button button:hover {
+.landingPage__button button a:hover,
+.helloPage__button button:hover,
+.helloPage__button button a:hover {
   color: #43D1D2;
 }
 
@@ -460,7 +475,7 @@ section {
 .landingPage__sideMenu ul {
 	list-style: none;
 	display: block;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	width: 350px;
 	letter-spacing: 3px;
 	padding: 0;
@@ -569,9 +584,10 @@ border-left: 20px solid #23A4C1 !important;
 
 .video__container {
 	position: absolute;
-	left: 10%;
+	left: 5%;
 	top: 0%;
 	width:  355px;
+	box-shadow: 2px 0px 5px 2px #572d78;
 }
 
 .video__container-right {
@@ -832,4 +848,161 @@ border-left: 20px solid #23A4C1 !important;
 	bottom: 0px;
 	left: 0px;
 	padding-top: 20px;
+}
+
+
+
+/** Main work with us **/
+
+.workwithus__container{
+	width: 100%;
+	max-width: 120rem;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 67px;
+	background: #1c1b1d;
+}
+
+.section-heading__workwithus {
+	
+	/*margin: 18rem 0;*/
+}
+
+
+.section-heading__workwithus h3 {
+
+	color: #c7c7c7;
+	font-size: 1.75em;
+	font-weight: 500;
+	padding-left: 150px;
+	padding: 50px 0 20px 150px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+.section-heading__workwithus p {
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #666666;
+	margin: 8rem 15rem;
+}
+
+.workwithus-button {
+	width: 80px;
+	height: 46px;
+	background: #fff;
+	border-radius: 7px;
+	border-style: none;
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+	cursor: pointer;
+	margin-bottom: 6%;
+}
+
+input[value="Send"] {
+	color: #141414;
+}
+
+.section-heading__workwithus form .workwithus-input__text {
+	background: #F9F9F9;
+	color: #1A1A1A;
+	margin-bottom: 10px;
+	line-height: 1.5rem;
+	padding:.7rem 1.4rem;
+	border: 1px solid #D3D3D3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.section-heading__workwithus form .workwithus-input__textarea {
+	background: #F9F9F9;
+	color: #1A1A1A;
+	margin-bottom: 10px;
+	line-height: 1.5rem;
+	padding:0.5rem 1rem;
+	border: 1px solid #D3D3D3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 133px;
+    resize: none;
+}
+
+.workwithus__label, 
+.workwithus__label_textarea{
+	margin-bottom: 5px;
+	text-align: left;
+}
+.workwithus__label label,
+.workwithus__label_textarea label{
+	font-weight: bold;
+	color: #fff;
+}
+
+.workwithus__label label span{
+	color: #B41918;
+	font-size: 1em;
+}
+
+.workwithus__label_textarea label span{
+	color: #fff;
+	font-size: 1em;
+}
+
+.workwithus__form {
+	width: 90%;
+	display: inline-block;
+	margin: 25px 0;
+}
+
+.workwithus__topform,
+.workwithus__middleform  {
+	width: 100%;
+	min-height: 65px;
+	margin: 10px 25px;
+}
+
+
+.workwithus__topform .workwithus__innerform {
+	width: 45%;
+	float: left;
+	margin-right: 5%;
+}
+
+.workwithus__topform .workwithus__innerform:last-child {
+	margin-right: 0;
+}
+
+.workwithus__bottomform {
+	text-align: left;
+	padding-left: 12px;
+}
+
+.contact__container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+}
+
+.contact__wrapper {
+	position: relative;
+	padding-left: 150px;
+}
+
+.contact__header-sm p{
+	font-size: 2rem;
+	line-height: 3.6rem;
+	margin: 0;
+	color: #212b35;
+}
+
+.contact__header-sm h1 {
+	font-size: 7rem;
+	line-height: 1;
+    margin: 0;
+    color: #212b35;
 }

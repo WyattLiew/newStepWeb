@@ -15,7 +15,11 @@ function mainNarbarFunction() {
   }
 }
 
+// number counter
 $(".global__countries").counterUp({delay:30,time:2500});
+
+// enable page transition
+// const swup = new Swup();
 
 
 
