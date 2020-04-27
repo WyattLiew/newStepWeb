@@ -15,13 +15,16 @@ html,body {
 	overflow: hidden;
 	width: 100%;
 	height:100vh;
+	background: #1c1b1d;
 }
 
 .landingPage__loading-background {
 	width: 70%;
-    position: absolute;
+    /*position: absolute;
     left: 15%;
-    top: 45px;
+    top: 45px;*/
+    position: relative;
+    left: 15%;
 }
 
 .landingPage__button {
