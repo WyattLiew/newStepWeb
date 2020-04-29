@@ -1,8 +1,16 @@
 html,body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth;
+}
+
+/*p {
+	font-family: 'Lato', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+}*/
+
+.paddingTop {
+	padding-top: 100px;
 }
 
 /* Landing page*/
@@ -34,20 +42,16 @@ html,body {
 	border:none;
 }
 
-.landingPage__button button{
-	/*border: none;
-    background: none;
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;*/
+.landingPage__button a button{
+	font-family: 'Titillium Web', sans-serif;
     background: none;
   border: none;
   border-radius: 5px;
   color: white;
   display: block;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   padding: 1rem 1.1rem;
   position: relative;
   text-transform: uppercase;
@@ -55,7 +59,7 @@ html,body {
   cursor: pointer;
 }
 
-.landingPage__button button a{
+.landingPage__button a{
 	text-decoration: none;
     color: white;
     padding-right: 10px;
@@ -67,10 +71,11 @@ canvas{
 
 /* background loop text */
 #background__looptext {
+	font-family: 'Titillium Web', sans-serif;
   color:#999;
   text-transform: uppercase;
-  font-size:46px;
-  font-weight:bold;
+  font-size:40px;
+  font-weight:600;
   /*padding-top:200px;  */
   position:absolute;
   width:75%;
@@ -139,13 +144,14 @@ nav {
 }
 
 .navbar__ul li a {
+	font-family: 'Titillium Web', sans-serif;
 	display: block;
 	color: #c7c7c76b;
 	text-align: center;
 	padding: 0px 50px;
 	text-decoration: none;
 	font-size: 1.3rem;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -159,7 +165,7 @@ nav {
 
 .navbar__ul li a:hover{
 	color: white;
-	transform: scale(1.2);
+	/*transform: scale(1.2);*/
 }
 
 .navbar__ul .main-navbar__icon{
@@ -182,53 +188,12 @@ nav {
 	height: 100vh;
 }*/
 
-.landingPage__backgroundtext {
-	position: absolute;
-	width: 100%;
-	overflow: hidden;
-}
-
-.landingPage__backgroundtext div:nth-child(1) {
-	position: relative;
-    left: 42%;
-    font-size: 100px;
-    color: #f7f7f7;
-    animation:backgroundtext 10s infinite ease-in;
-}
-
-.landingPage__backgroundtext div:nth-child(2) {
-	position: relative;
-    left: 0%;
-    transform: translate(60px, 54px);
-    font-size: 100px;
-    color: #f7f7f7;
-    animation:backgroundtext 10s infinite ease-in;
-}
-
-.landingPage__backgroundtext div:nth-child(3) {
-	position: relative;
-    transform: translate(66px, -180px);
-    left: 50%;
-    font-size: 100px;
-    color: #f7f7f7;
-    animation:backgroundtext 10s infinite ease-in;
-}
-
-@keyframes backgroundtext {
-	from {
-		opacity: 0.8;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
 
 
 .landingPage__hello-header {
 	position: relative;
 	margin-left: 20%;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .sideContent__boxContainer {
@@ -245,8 +210,9 @@ nav {
 .landingPage__hello-header h2{
 	font-size: 5rem;
 	text-transform: uppercase;
-    letter-spacing: 2rem;
-    font-weight: bold;
+    letter-spacing: 0.3em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
 }
 
 .landingPage__hello-container {
@@ -267,19 +233,22 @@ nav {
 }
 
 .helloPage__text {
-	position: absolute;
+	position: relative;
     top: 0px;
-    left: 50px;
-    width: 870px;
-    margin: 15px;
+    width: 900px;
+    height: 300px;
+	border-left: 20px solid #1c1b1d; 
 }
 
 .helloPage__text p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	color: #1c1b1d;
 	text-align: left;
 	font-size: 1.4rem;
-	letter-spacing: 4px;
+	letter-spacing: 0.2em;
 	line-height: 1.6;
+	padding: 30px;
 }
 
 .helloPage__button {
@@ -288,10 +257,10 @@ nav {
 	right: 10%;
 }
 
-.landingPage__button button,
-.landingPage__button button::after,
-.helloPage__button button,
-.helloPage__button button::after {
+.landingPage__button a button,
+.landingPage__button a button::after,
+.helloPage__button a button,
+.helloPage__button a button::after {
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -299,20 +268,22 @@ nav {
 }
 
 
-.helloPage__button button a{
+.helloPage__button a{
 	text-decoration: none;
     color: #1c1b1d;
     padding-right: 10px;
 }
 
-.helloPage__button button {
+.helloPage__button a button {
+	font-family: 'Titillium Web', sans-serif;
   background: none;
   border: none;
   border-radius: 5px;
   color: #1c1b1d;
   display: block;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   position: relative;
   text-transform: uppercase;
   z-index: 1;
@@ -365,6 +336,7 @@ nav {
 }
 
 .landingPage__cap-header span{
+	font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -391,7 +363,7 @@ nav {
 	position: absolute;
     top: 0%;
     right: 0;
-    width: 75%;
+    width: 70%;
 }
 
 .sideContent__box2 {
@@ -421,6 +393,8 @@ nav {
 }
 
 .sideContent__box2 h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
     font-size: 2.5rem;
     padding-top: 35px;
     left: 5%;
@@ -428,11 +402,21 @@ nav {
     color: white;
 }
 
+.sideContent__box2 p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	letter-spacing: 0.1em;
+	line-height: 1.6;
+}
+
 .sideContent__box2 ul{
 	margin:20px;
 }
 
 .sideContent__box2 ul li{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
 	list-style: none;
 	font-size: 1.4rem;
 	padding: 5px;
@@ -476,16 +460,24 @@ nav {
 }
 
 .landingPage__sideMenu ul {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
 	list-style: none;
 	display: block;
-	font-size: 1.3rem;
-	width: 350px;
-	letter-spacing: 3px;
+	font-size: 1.6rem;
+	width: 30%;
+	letter-spacing: 0.1em;
 	padding: 0;
+	color: #9e9e9e;
 }
 
 .landingPage__sideMenu li {
-	padding: 10%;
+	padding: 10% 0 10% 10%;
+}
+
+.sideMenu__selected {
+	color: #1c1b1d;
+	font-weight: 600;
 }
 
 #sidemenu__list1 {
@@ -504,10 +496,10 @@ nav {
 border-left: 20px solid #43D1D2 !important;
 }
 #sidemenu__list2:hover{
-border-left: 20px solid #06B3AD !important;
+border-left: 20px solid #4782BC !important;
 }
 #sidemenu__list3:hover{
-border-left: 20px solid #23A4C1 !important;
+border-left: 20px solid #7F65BC !important;
 }
 #sidemenu__list4:hover{
 	border-left: 20px solid #4782BC !important;
@@ -647,120 +639,206 @@ border-left: 20px solid #23A4C1 !important;
 .landingPage__brands-header {
 	position: relative;
 	text-align: center;
-	padding-top: 70px;
 }
 
 .landingPage__brands-header h2{
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 2.5rem;
 	text-transform: uppercase;
-    letter-spacing: 1.5rem;
-    font-weight: bold;
+    letter-spacing: 0.3em;
+    font-weight: 600;
 }
 
-/* LandingPage__Global presence*/
-.landingPage__global-container {
-	position: relative;
-	left: 22%;
-	width: 65%;
-	height: auto;
+/* landingPage__testimonials*/
 
+.landingPage__testimonials {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.testimonial__inner {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.testimonial__row {
 	display: flex;
-	flex-direction: row;
-	flex-flow: wrap;
+	flex-wrap: wrap;
 }
 
-.global__boxlist1 {
-	width: 30%;
-	height: 300px;
-	margin: 5px;
+.testimonial__col {
+	flex: 33.33%;
+	max-width: 33.33%;
 	box-sizing: border-box;
+	padding:15px;
 }
 
-.global__boxlist1 ul li{
-	list-style: none;
-	font-size: 1.3rem;
-	padding: 3px;
-	text-transform: uppercase;
+.testimonial__body {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #3e3d3d;
+  display: inline-block;
+    font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
-.global__boxlist1 span{
-	font-size: 25px;
-	margin: 25px;
-	text-transform: uppercase;
+.tb1 {
+	border-top: 5px solid #43D1D2;
 }
 
-.global__countries {
-	font-size: 56px;
-	margin: 10px;
-	padding:30px;
+.tb2 {
+	border-top: 5px solid #4782BC;
 }
 
-.global__countriesBox span{
-	font-size: 16px;
+.tb3 {
+	border-top: 5px solid #7F65BC;
+}
+
+.tb1:before{
+	color:#43D1D2;
+}
+
+.tb2:before {
+	color: #4782BC;
+}
+
+.tb3:before{
+	color: #7F65BC;
+}
+
+
+.testimonial__body {
+padding: 13% 10% 12%;
+}
+
+.testimonial__body:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  /*color: #d2652d;*/
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.testimonial__body blockquote {
+	font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+  letter-spacing: 0.1em;
+}
+
+.testimonial__body h3 {
+	font-family: 'Lato', sans-serif;
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.testimonial__body h4 {
+	font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
 }
 
 /** main global impact**/
 
-.main__globalimpact .container {
-    margin: 0 auto;
-}
-
-.section-heading__globalimpact {
+.landingPage__globalImpact {
+	padding: 40px 0;
+	padding-bottom: 60px;
 	text-align: center;
 }
 
-.global__counter{
+.globalImpact__inner {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.landingPage__globalText {
+	position: relative;
+	text-align: center;
+}
+
+.landingPage__globalText p {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+    line-height: 180%;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.globalImpact__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.globalImpact__col {
+	flex: 33.33%;
+	max-width: 33.33%;
+	box-sizing: border-box;
+	padding:15px;
+}
+
+.globalImpact__col p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 130%;
+    text-transform: uppercase;
+}
+
+.sm__global-text {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.global__counter {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 43px;
+    line-height: 130%;
+    font-weight: 700;
+}
+
+.countries__container {
+	width: 100%;
+	height: 10vh;
 	position: relative;
 }
 
-.section-heading__globalimpact h1 {
-	margin: 0;
-	font-size: 5.5em;
-	font-family: "Roboto", sans-serif;
-	color: #43d1d0;
-	text-align: left;
-	font-weight: 500;
-	padding-left: 150px;
-	text-transform: uppercase;
-	letter-spacing: 7px;
+.country {
+font-family: 'Lato', sans-serif;
+  font-size:20px;
+  font-weight: 400;
 }
 
-.section-heading__globalimpact span {
-	margin: 0;
-    font-size: 2.5em;
-    font-family: "Roboto", sans-serif;
-    color: #43d1d0;
-    text-align: left;
-    font-weight: 500;
-    padding-left: 150px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 44%;
-    left: 140px;
-}
 
-.section-heading__globalimpact h3 {
-	color: #141414;
-	font-size: 2.75em;
-	padding-top: 40px;
-	margin:0;
-    padding-bottom: 25px;
-	font-weight: 100;
-	text-align: left;
-    padding-left: 150px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-.globalimpact__imglarge {
-	width: 70%;
-	padding-right: 130px;
-	padding-bottom: 5rem;
-}
-
-.globalimpact__imgsmall {
-	display: none;
-}
 
 /** Footer CSS Start here **/
 .footer {
@@ -791,14 +869,19 @@ border-left: 20px solid #23A4C1 !important;
 
 .footer .footer-content h1,
 .footer .footer-content h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
 	color: #fff;
 	text-transform: uppercase;
 }
 
 .footer .footer-content .footer__contact .footer__contacts span,
 .footer .footer-content .footer__contact .footer__contacts a {
+	font-family: 'Titillium Web', sans-serif;
 	display: -webkit-box;
+	display: flex;
 	font-size: 1.1em;
+	font-weight: 400;
 	margin-bottom: 8px;
 	color: #fff;
 	text-decoration: none;
@@ -827,6 +910,8 @@ border-left: 20px solid #23A4C1 !important;
 
 .footer .footer-content .footer__services a,
 .footer .footer-content .footer__step a {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
 	display: block;
 	margin-bottom: 10px;
 	font-size: 1.2em;
@@ -843,6 +928,7 @@ border-left: 20px solid #23A4C1 !important;
 
 
 .footer .footer-bottom {
+	font-family: 'Titillium Web', sans-serif;
 	background: ;
 	height:50px;
 	width: 100%;
@@ -859,39 +945,65 @@ border-left: 20px solid #23A4C1 !important;
 
 .workwithus__container{
 	width: 100%;
-	max-width: 120rem;
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-	margin-top: 67px;
-	background: #1c1b1d;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    /* margin-top: 67px; */
+    background: #1c1b1d;
 }
 
 .section-heading__workwithus {
-	
-	/*margin: 18rem 0;*/
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
 }
 
 
-.section-heading__workwithus h3 {
+.contact__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 50px;
+}
 
+.contact__col {
+	flex: 50%;
+	max-width: 50%;
+	box-sizing: border-box;
+	padding:15px;
+}
+
+.contact__logo {
+	width: 80%;
+	position: relative;
+	border-left-style: groove;
+}
+
+.section-heading__workwithus h3 {
+	font-family: 'Titillium Web', sans-serif;
 	color: #c7c7c7;
-	font-size: 1.75em;
-	font-weight: 500;
-	padding-left: 150px;
-	padding: 50px 0 20px 150px;
-	text-align: left;
-	letter-spacing: 2px;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 600;
+    padding: 20px 0 20px 0px;
+    letter-spacing: 0.1em;
 }
 
 .section-heading__workwithus p {
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 1.4rem;
-	font-weight: 500;
+	font-weight: 400;
 	color: #666666;
 	margin: 8rem 15rem;
 }
 
 .workwithus-button {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
 	width: 80px;
 	height: 46px;
 	background: #fff;
@@ -936,43 +1048,44 @@ input[value="Send"] {
 
 .workwithus__label, 
 .workwithus__label_textarea{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	text-align: left;
 }
 .workwithus__label label,
 .workwithus__label_textarea label{
+	font-family: 'Titillium Web', sans-serif;
 	font-weight: bold;
 	color: #fff;
 }
 
 .workwithus__label label span{
+	font-family: 'Titillium Web', sans-serif;
 	color: #B41918;
 	font-size: 1em;
 }
 
 .workwithus__label_textarea label span{
+	font-family: 'Titillium Web', sans-serif;
 	color: #fff;
 	font-size: 1em;
 }
 
 .workwithus__form {
-	width: 90%;
-	display: inline-block;
-	margin: 25px 0;
+	width: 100%;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    position: relative;
+    text-align: -webkit-center;
 }
 
 .workwithus__topform,
 .workwithus__middleform  {
 	width: 100%;
 	min-height: 65px;
-	margin: 10px 25px;
 }
 
 
 .workwithus__topform .workwithus__innerform {
-	width: 45%;
-	float: left;
-	margin-right: 5%;
+	width: 100%;
 }
 
 .workwithus__topform .workwithus__innerform:last-child {
@@ -981,31 +1094,4 @@ input[value="Send"] {
 
 .workwithus__bottomform {
 	text-align: left;
-	padding-left: 12px;
-}
-
-.contact__container {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	padding-top: 100px;
-}
-
-.contact__wrapper {
-	position: relative;
-	padding-left: 150px;
-}
-
-.contact__header-sm p{
-	font-size: 2rem;
-	line-height: 3.6rem;
-	margin: 0;
-	color: #212b35;
-}
-
-.contact__header-sm h1 {
-	font-size: 7rem;
-	line-height: 1;
-    margin: 0;
-    color: #212b35;
 }

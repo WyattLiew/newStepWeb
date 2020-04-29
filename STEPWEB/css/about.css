@@ -10,6 +10,8 @@
 }
 
 .aboutus__textcontainer h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
 	position: relative;
     padding: 100px;
     text-align: -webkit-center;
@@ -19,7 +21,7 @@
 }
 
 .aboutus__textcontainer span:nth-child(1) {
-    font-size: 60px;
+    font-size: 42px;
     color: white;
 }
 .aboutus__textcontainer span:nth-child(2),
@@ -96,6 +98,8 @@ section {
 }
 
 .about__title h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
 	font-size: 5rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -103,6 +107,8 @@ section {
 }
 
 .about__title h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
 	font-size: 25px;
     letter-spacing: 2px;
     color: #FF7043;
@@ -116,31 +122,47 @@ section {
 }
 
 .about__aboutusheader p:nth-child(1) {
+  font-family: 'Titillium Web', sans-serif;
 	font-size: 42px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	padding-top: 20px;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .about__aboutusheader p:nth-child(2) {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 	font-size: 20px;
 	margin: 0;
 }
 
 .about__aboutusheader p:nth-child(3) {
-	font-size: 24px;
-	margin: 0;
-	font-weight: bold;
-	padding-top: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
 }
 
 .about__aboutusheader p:nth-child(4) {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+	font-size: 22px;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.about__aboutusheader p:nth-child(5) {
+ font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 	font-size: 20px;
 	margin: 0;
 }
 
-.about__aboutusheader p:nth-child(5) {
+.about__aboutusheader p:nth-child(6) {
+ font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 	font-size: 20px;
 	padding-top: 20px;
 }
@@ -167,12 +189,15 @@ section {
 }
 
 .core__aboutusheader h1 {
+  font-family: 'Titillium Web', sans-serif;
 	font-size: 2rem;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 2px;
     color: #67b5fb;
 }
 .core__aboutusheader p:nth-child(1) {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 2px;
 }
@@ -304,11 +329,15 @@ section {
 }
 
 .content h2{
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: 600;
   font-size: 26px;
   letter-spacing: 2px;
 }
 
 .content p{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 2px;
 }
