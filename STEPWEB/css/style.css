@@ -35,6 +35,10 @@ html,body {
     left: 15%;
 }
 
+.logo2 {
+	display: none;
+}
+
 .landingPage__button {
 	position: absolute;
 	bottom: 5%;
@@ -235,8 +239,6 @@ nav {
 .helloPage__text {
 	position: relative;
     top: 0px;
-    width: 900px;
-    height: 300px;
 	border-left: 20px solid #1c1b1d; 
 }
 
@@ -324,6 +326,7 @@ nav {
 /* landingPage__capabilities*/
 .landingPage__services-container {
 	overflow: hidden;
+	padding-top: 80px; 
 }
 
 .landingPage__capabilities-container {
@@ -862,8 +865,8 @@ font-family: 'Lato', sans-serif;
 .footer .footer-content .footer__logo img {
 	margin:30px;
 	padding-left: 50px;
-	width: 120px;
-    height: 50px;
+	width: 160px;
+    height: 70px;
 
 }
 
@@ -879,7 +882,6 @@ font-family: 'Lato', sans-serif;
 .footer .footer-content .footer__contact .footer__contacts a {
 	font-family: 'Titillium Web', sans-serif;
 	display: -webkit-box;
-	display: flex;
 	font-size: 1.1em;
 	font-weight: 400;
 	margin-bottom: 8px;

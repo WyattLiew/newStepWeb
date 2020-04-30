@@ -1,5 +1,15 @@
 /*DS Main contain*/
 
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
 .ds__mainContainer {
 	position: relative;
 	width: 100%;
@@ -17,15 +27,17 @@
 }
 
 .ds__mainHeader h2 span{
-	font-weight: 100;
+    font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
 }
 
 .ds__mainHeader h2{
+    font-family: 'Titillium Web', sans-serif;
     letter-spacing: 5px;
     position: relative;
     left: 20%;
     font-size: 64px;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     line-height: 80px;
 }
@@ -52,6 +64,8 @@
 
 
 .ds__maintext p:nth-child(1) {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
     color: #1c1b1d;
     text-align: left;
     font-size: 20px;
@@ -60,12 +74,13 @@
 }
 
 .ds__maintext p:nth-child(2) {
+    font-family: 'Titillium Web', sans-serif;
     color: #1c1b1d;
     text-align: left;
     font-size: 20px;
     letter-spacing: 4px;
     line-height: 1.6;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* ds content*/
@@ -109,11 +124,13 @@
 }
 
 .ds__header h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
     position: relative;
     font-size: 34px;
     padding: 40px;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
 }
 
 .ds__header p {
@@ -448,7 +465,7 @@
 
 .ds__header-7 p {
 	position: relative;
-    font-size: 16px;
+    font-size: 18px;
     width: 70%;
     padding-left: 150px;
     letter-spacing: 2px;
