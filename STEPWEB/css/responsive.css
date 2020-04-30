@@ -399,6 +399,7 @@
 
 .holder section {
   background-position: center;
+  background-attachment: scroll;
 }
 }
 
