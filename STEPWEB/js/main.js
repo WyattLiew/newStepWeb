@@ -16,7 +16,7 @@ function mainNarbarFunction() {
 }
 
 // number counter
-$(".global__counter").counterUp({delay:30,time:2500});
+$(".global__counter").counterUp({delay:30,time:1500});
 
 // enable page transition
 // const swup = new Swup();

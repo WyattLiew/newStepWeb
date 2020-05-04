@@ -150,7 +150,7 @@ nav {
 .navbar__ul li a {
 	font-family: 'Titillium Web', sans-serif;
 	display: block;
-	color: #c7c7c76b;
+	color: rgba(199,199,199,0.42);
 	text-align: center;
 	padding: 0px 50px;
 	text-decoration: none;
