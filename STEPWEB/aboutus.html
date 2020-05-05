@@ -218,6 +218,7 @@ understand what to build and follow.</p>
 	window.addEventListener('scroll', function(){
 		var value = window.scrollY;
 		section.style.clipPath = "circle("+value+"px at center)";
+		section.style['-webkit-clip-path']= "circle("+value+"px at center)";
 	});
 </script>
 </html>
