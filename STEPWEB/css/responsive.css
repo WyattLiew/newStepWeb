@@ -399,7 +399,7 @@
 
 .holder section {
   background-position: center;
-  /*background-attachment: scroll;*/
+  background-attachment: scroll;
   -webkit-clip-path: circle(0px at center);
 }
 }
