@@ -273,6 +273,8 @@
 
   .landingPage__hello-header {
     margin-left: 0;
+    padding-left: 0;
+    padding-top: 20px;
   }
   .landingPage__hello-header h2{
     font-size: 40px;
@@ -359,6 +361,10 @@
     font-size: 32px;
 }
 
+.about__container {
+  margin-top: 0;
+}
+
 .core__aboutusheader {
     padding: 20px;
 }
@@ -368,7 +374,7 @@
 }
 
 .about__title {
-  padding-top: 0;
+  padding: 20px;
 }
 
 .about__main-bar {
@@ -382,6 +388,20 @@
   position: relative;
   left: 0;
   font-size: 18px;
+}
+
+.about__aboutusheader p:nth-child(1) {
+    font-size: 28px;
+}
+
+.about__aboutusheader p:nth-child(2),
+.about__aboutusheader p:nth-child(3),
+.about__aboutusheader p:nth-child(4)  {
+    font-size: 18px;
+}
+
+.core__aboutusheader p:nth-child(1) {
+    font-size: 18px;
 }
 
 .content h2 {
@@ -400,7 +420,7 @@
 .holder section {
   background-position: center;
   background-attachment: scroll;
-  -webkit-clip-path: circle(0px at center);
+  /*-webkit-clip-path: circle(0px at center);*/
 }
 }
 

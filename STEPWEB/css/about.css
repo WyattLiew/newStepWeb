@@ -55,7 +55,7 @@ section {
 	/*background-attachment: fixed;*/
 	background-size: cover;
 	clip-path: circle(0px at center);
-  -webkit-clip-path: circle(0px at center);
+  /*-webkit-clip-path: circle(0px at center);*/
 	animation:brightness 10s infinite ease-in-out;
 }
 
