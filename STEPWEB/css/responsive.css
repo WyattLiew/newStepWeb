@@ -257,6 +257,9 @@
     bottom: 20%;
     text-align: center;
 }
+#background__flip > div > div {
+  height:40px;
+}
 .landingPage__button {
     position: absolute;
     bottom: 5%;
@@ -305,7 +308,12 @@
 }
 
 .landingPage__cap-header span:nth-child(2) {
-    font-size: 50px;
+    font-size: 40px;
+}
+
+.landingPage__cap-header {
+    left: 0%;
+    padding-left: 20px;
 }
 
 
@@ -336,8 +344,19 @@
     margin: 2rem 0rem;
 }
 
+.testimonial__inner {
+     padding: 0; 
+}
+
+.pd-20-sm h2{
+  padding:0 20px;
+}
+
 .landingPage__globalText p {
     font-weight: 300;
+}
+.landingPage__globalImpact {
+    padding: 0; 
 }
  }
 
@@ -422,6 +441,15 @@
   background-attachment: scroll;
   /*-webkit-clip-path: circle(0px at center);*/
 }
+
+.timeline {
+  padding-top: 0;
+}
+
+.timeline::after {
+    top: 35px;
+}
+
 }
 
 /*articles*/
