@@ -4,6 +4,25 @@
 	<title>STEP - One Step Ahead</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We provide User Experiences Design / Business Innovation / Product and Service Design">
+	<meta property="og:title" content="STEP - One Step Ahead" />
+	<meta property="og:url" content="https://www.steppl.com.sg" />
+	<meta property="og:description" content="We provide User Experiences Design / Business Innovation / Product and Service Design">
+	<meta property="og:image" content="assets/logo/logo300x200.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153402549-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153402549-1');
+</script>
+
+
+
+
 
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,10 +32,13 @@
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
 	
 </head>
 <body>
@@ -26,7 +48,8 @@
 		<li><a href="index.html"  class="nav__selected"><span>1</span>Home.</a></li>
 	 	<li><a href="aboutus.html"><span>2</span>About Us.</a></li>
 	 	<li><a href="articles.html"><span>3</span>Articles.</a></li>
-	 	<li><a href="contact.html"><span>4</span>Connect.</a></li>
+	 	<li><a href="products.html"><span>4</span>Products.</a></li>
+	 	<li><a href="contact.html"><span>5</span>Connect.</a></li>
 	 	<li><a href="javascript:void(0);" class="main-navbar__icon" onclick="mainNarbarFunction()">
     <i class="fa fa-bars" id="menu"></i></a></li>
 	</ul>
@@ -42,14 +65,14 @@
 
 </div>
 
-<div id="background__looptext">
+<!-- <div id="background__looptext">
   We <br>Provide
   <div id="background__flip">
     <div><div>User Experiences Design.</div></div>
     <div><div>Business Innovation.</div></div>
     <div><div>Product and Service Design.</div></div>
   </div>
-</div>
+</div> -->
 
 <div class="landingPage__button">
 			<a href="contact.html"><button>Connect <i class="fas fa-headset"></i></button></a>
@@ -65,9 +88,9 @@
 	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="landingPage__hello-vertivalLine">
 		<!-- <div class="landingPage__hello-bar"></div> -->
 		<div class="helloPage__text">
-		<p>We <b>DESIGN</b> phygital <b>EXPERIENCES</b><br>Through <b>CREATIVE TECHNOLOGIES.</b><br><br>
-		STEP IS HERE TO CREATE A USER-CENTRIC SOLUTIONS<br>
-		FOR OUR CLIENTS, EXPLORING POSSIBILITY THAT ENRICH<br>
+		<p>We <b>DESIGN</b> phygital <b>EXPERIENCES</b> <br class="br__display">Through <b>CREATIVE TECHNOLOGIES.</b><br><br>
+		STEP IS HERE TO CREATE A USER-CENTRIC SOLUTIONS<br class="br__display">
+		FOR OUR CLIENTS, EXPLORING POSSIBILITY THAT ENRICH<br class="br__display">
 		OR ACCELERATE INTO A PHYGITAL EXPERIENCE.
 		</p>
 	</div>
@@ -78,152 +101,101 @@
 </div>
 </section>
 
-<div class="landingPage__services-container">
+	<div class="landingPage__services-container">
 	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" class="landingPage__cap-header">
-		<span>OUR </span><span> Services</span>
+		<!-- <span>OUR </span><span> Services</span> -->
+		<h2>Our Services</h2>
 	</div>
-	<div class="cap__container">
-	<div data-aos="fade-right" data-aos-offset="200" data-aos-delay="400" class="landingPage__sideMenu">
-			<ul>
-				<li id="sidemenu__list1" class="sideMenu__selected">Technology Solution</li>
-				<li id="sidemenu__list2">UX Strategist</li>
-				<!-- <li id="sidemenu__list3">Product Design</li>
-				<li id="sidemenu__list4">Service Design</li> -->
-				<li id="sidemenu__list3">AV Consultancy</li>
-			</ul>
-		</div>
-		<div  class="sideContent__boxContainer2" id="sideContent__list1">
-		<div data-aos="fade-left" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-1">
-			<div >
-				<h2> </h2>
-			<ul>
-			<li>Immersive Technology</li>
-			<li>Software Development</li>
-			<li>Data Analytics</li>
-			</ul>
-		</div>
-		<div class="sideContent__img">
-			<img class="capfloat" src="assets/ai/captech.png">
-		</div>
-		</div>
-	</div>
-	
-	<div  class="sideContent__boxContainer2" id="sideContent__list2">
-		<div data-aos="fade-left" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-4">
-		<div>
-				<h2> </h2>
-			<ul>
+	<div class="cap__container circle__inner">
+	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="circle__row">
+			<div class="circle__col">
+				<div class="circle_m1 circle_color_1">
+				    <div class="circle_m1_header">
+				    	<h2>Technology</h2><h2 class="bgc-5">Solutions</h2>
+				    	<div class="circle_m2_header">
+				    	<ul>
+						<li>Immersive Technology</li>
+						<li>Software Development</li>
+						<li>Data Analytics</li>
+						</ul>
+					</div>
+				    </div>
+				  </div>
+			</div>
+			<div class="circle__col">
+				<div class="circle_m1 circle_color_2">
+				    <div class="circle_m1_header">
+				    	<h2>User Experience</h2><h2 class="bgc-1">Strategist</h2>
+				    	 <div class="circle_m2_header">
+				    	<ul>
 			<li>Concept Creation</li>
 			<li>Prototyping Process</li>
 			<li>Research & Development</li>
 			</ul>
-		</div>
-		<div class="sideContent__img">
-			<img class="capfloat" src="assets/ai/capux.png">
-		</div>
-		</div>
-	</div>
-
-<!-- 	<div  class="sideContent__boxContainer2" id="sideContent__list3">
-		<div data-aos="fade-left" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-3">
-		<div>
-				<h2>Product Design .</h2>
-			<ul>
-			<li>Design Blueprints</li>
-			<li>Retailtainment</li>
-			<li>Experience Prototypes</li>
-			<li>Future State Storyboards</li>
-			</ul>
-		</div>
-		<div class="sideContent__img">
-			<img class="capfloat" src="assets/ai/capprod.png">
-		</div>
-		</div>
-	</div>
-	<div  class="sideContent__boxContainer2" id="sideContent__list4">
-		<div data-aos="fade-left" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-4">
-		<div>
-				<h2>Service Design .</h2>
-			<ul>
-			<li>Data Visualization</li>
-			<li>Mobile Applications</li>
-			<li>UI Component</li>
-			<li>Software Integrations</li>
-			<li>Audio-Visual Systems</li>
-			</ul>
-		</div>
-		<div class="sideContent__img">
-			<img class="capfloat" src="assets/ai/capserv.png">
-		</div>
-		</div>
-	</div> -->
-
-	<div class="sideContent__boxContainer2" id="sideContent__list3">
-		<div data-aos="fade-left" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-5">
-		<div>
-				<h2> </h2>
-			<ul>
+				    </div>
+				    </div>
+				  </div>
+			</div>
+			<div class="circle__col">
+				<div class="circle_m1 circle_color_3">
+				    <div class="circle_m1_header">
+				    	<h2>Audio-Visual</h2><h2 class="bgc-4">Consultancy</h2>
+				    	 <div class="circle_m2_header">
+				    	<ul>
 			<li>Consulting</li>
 			<li>System Design</li>
 			<li>Workplace Technology</li>
 			</ul>
-		</div>
-		<div class="sideContent__img">
-			<img class="capfloat" src="assets/ai/capav1.png">
-		</div>
+				    </div>
+				    </div>
+				  </div>
+			</div>
 		</div>
 	</div>
-	</div>
-	
-	<div class="landingPage__capabilities-container" >
-<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-1">
-			<div class="cap__col">
 
-			<h2>Technology Solution</h2>
-				<!-- <h2>Digital Transformation</h2> -->
-			<ul>
-			<li>Immersive Technology</li>
-			<li>Software Development</li>
-			<li>Data Analytics</li>
-			</ul>
-		</div>
-		<div class="sideContent__img cap__col">
-			<img class="capfloat" src="assets/ai/captech.png">
-		</div>
-		</div>
-	</div>	
-	<div class="landingPage__capabilities-container" >
-		<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-4">
-		<div class="cap__col">
-			<h2>UX Strategist</h2>
-				<!-- <h2>Product/Service Design</h2> -->
-			<ul>
+	<!-- Swiper -->
+  <div class="swiper-container circle__sm">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="circle_m1 circle_color_1">
+				    <div class="circle_m1_header">
+				    	<h2>Technology</h2><h2 class="bgc-5">Solutions</h2>
+				    	<div class="circle_m2_header">
+				    	<ul>
+						<li>Immersive Technology</li>
+						<li>Software Development</li>
+						<li>Data Analytics</li>
+						</ul>
+					</div>
+				    </div>
+				  </div></div>
+      <div class="swiper-slide"><div class="circle_m1 circle_color_2">
+				    <div class="circle_m1_header">
+				    	<h2>User Experience</h2><h2 class="bgc-1">Strategist</h2>
+				    	 <div class="circle_m2_header">
+				    	<ul>
 			<li>Concept Creation</li>
 			<li>Prototyping Process</li>
 			<li>Research & Development</li>
 			</ul>
-		</div>
-		<div class="sideContent__img cap__col">
-			<img class="capfloat" src="assets/ai/capux.png">
-		</div>
-		</div>
-	</div>
-<div class="landingPage__capabilities-container" >
-	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="sideContent__box2 bgc-5">
-		<div>
-			<h2>AV Consultancy</h2>
-				<!-- <h2>Audio Visual Design</h2> -->
-			<ul>
+				    </div>
+				    </div>
+				  </div></div>
+      <div class="swiper-slide"><div class="circle_m1 circle_color_3">
+				    <div class="circle_m1_header">
+				    	<h2>Audio-Visual</h2><h2 class="bgc-4">Consultancy</h2>
+				    	 <div class="circle_m2_header">
+				    	<ul>
 			<li>Consulting</li>
 			<li>System Design</li>
 			<li>Workplace Technology</li>
 			</ul>
-		</div>
-		<div class="sideContent__img">
-			<img class="capfloat" src="assets/ai/capav1.png">
-		</div>
-		</div>
-	</div>
+				    </div>
+				    </div>
+				  </div></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 
 <!-- <div class="landingPage__ourwork-Container">
 <div class="landingPage__box-Container float-left">
@@ -273,7 +245,7 @@
 		<h2>Client's Testimonials</h2>
 	</div>
 		<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="testimonial__row">
-			<div class="testimonial__col">
+			<!-- <div class="testimonial__col">
 				<div class="testimonial__body tb1">
 				    <blockquote>
 				      <p>Thank you so much Mo, Pragnesh, Joseph,
@@ -286,8 +258,8 @@
 				    <h3>JOYCE, SK-II GBU</h3>
 				    <h4>Procter & Gamble</h4>
 				  </div>
-			</div>
-			<div class="testimonial__col">
+			</div> -->
+			<!-- <div class="testimonial__col">
 				<div class="testimonial__body tb2">
 				    <blockquote>
 				      <p>Thank you so much Mo, Pragnesh, Joseph,
@@ -300,7 +272,7 @@
 				    <h3>JOYCE, SK-II GBU</h3>
 				    <h4>Procter & Gamble</h4>
 				  </div>
-			</div>
+			</div> -->
 			<div class="testimonial__col">
 				<div class="testimonial__body tb3">
 				    <blockquote>
@@ -322,6 +294,45 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Swiper -->
+  <div class="swiper-container testimonial__sm">
+    <div class="swiper-wrapper">
+      <!-- <div class="swiper-slide">
+      	<div class="testimonial__body tb1">
+				    <blockquote>
+				      <p>Thank you so much Mo, Pragnesh, Joseph,
+						Danny and Dennis for the smooth
+						installation at Changi!
+						Really appreciate the awesome teamwork
+						and agility, despite the much shorter
+						installation window this round!</p>
+				    </blockquote>
+				    <h3>JOYCE, SK-II GBU</h3>
+				    <h4>Procter & Gamble</h4>
+				  </div>
+				</div> -->
+      <div class="swiper-slide"><div class="testimonial__body tb3">
+				    <blockquote>
+				      <p>STEP takes their commitment to be a partner seriously.
+	They have been instrumental for my project team by being always
+	there for us and going the extra miles, ensuring PD’s projects are
+	delivered successfully in rapid time! They watch out for us, pull
+	information rather than wait to be informed, they present solutions,
+	not problem. STEP’s flexibility, capabilities, integrity, eagerness to
+	ensure our success and above all their people are second to none.
+	The best part is that I could completely trust their team to represent
+	our company professionally with our clients. Their commitment and
+	pro-activeness are the keys to our collaboration. We are excited to
+	continue our partnership with STEP. Great team! Great partner!</p>
+				    </blockquote>
+				    <h3>Mindy Hang, Account Director</h3>
+				    <h4>POSITIVE DESIGN</h4>
+				  </div></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
 
 <div class="landingPage__globalImpact">
@@ -331,7 +342,7 @@
 	</div>
 	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" class="landingPage__globalText">
 		<p>OUR CURRENT AND POTENTIAL MARKETS IS AN ESSENTIAL ELEMENT OF OUR BUSINESS STRATEGY.</p>
-		<p>WE ARE PRESENT IN REGIONS, WHERE OUR CUSTOMERS ARE ACTIVE,<br>
+		<p>WE ARE PRESENT IN REGIONS, WHERE OUR CUSTOMERS ARE ACTIVE,<br class="br__display">
 			SO THAT WE CAN RESPOND AS EFFECTIVELY AS POSSIBLE TO THEIR NEEDS.</p>
 	</div>
 	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" class="globalImpact__row">
@@ -358,12 +369,13 @@
 <div class="footer">
 	<div class="footer-content">
 		<div class="footer-section footer__logo">
-			<a href="index.html"><img alt="Step Company logo" src="assets/logo/footerlogo.png" /></a>
+			<a href="index.html"><img alt="Step Company logo" src="assets/logo/footerlogo1.png" /></a>
 		</div>
 		<div class="footer-section footer__step">
 			<h2>Information</h2>
-				<a href="aboutus.html">Our Story</a>
+				<a href="aboutus.html">About Us</a>
 				<a href="articles.html">Articles</a>
+				<a href="products.html">Products</a>
 		</div>
 		<div class="footer-section footer__contact">
 			<h2>Contact</h2>
@@ -383,8 +395,10 @@
 </div>
 
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/sidemenu.js"></script>
+<!-- <script type="text/javascript" src="js/sidemenu.js"></script> -->
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript">
 	AOS.init({
 		offset: 120, // offset (in px) from the original trigger point
@@ -392,5 +406,21 @@
   		duration: 1000
 	});
 </script>
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>

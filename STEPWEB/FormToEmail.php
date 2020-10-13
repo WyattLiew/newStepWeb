@@ -60,7 +60,7 @@ Block web addresses or rude words.
 
 Block gibberish (MldMtrPAgZq etc).
 
-Block gobbledegook characters (Å ð ç etc).
+Block gobbledegook characters (ï¿½ ï¿½ ï¿½ etc).
 
 Set encoding (utf-8 etc).
 

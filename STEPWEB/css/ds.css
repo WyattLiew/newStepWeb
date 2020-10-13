@@ -496,3 +496,47 @@ h2 {
 	font-size: 20px;
 	color: #809e8052;
 }
+
+.paging__inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    padding-bottom: 80px;
+}
+
+.paging__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paging__col {
+    flex: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding:15px;
+}
+
+.paging__text a{
+    text-decoration: none;
+    color: #1c1b1d;
+    font-size: 20px;
+}
+
+.paging__text a h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.paging__text i {
+    font-size: 18px;
+}
+
+.paging__right {
+    float: right;
+}
+
+.paging__text a:hover{
+    text-decoration: underline;
+}

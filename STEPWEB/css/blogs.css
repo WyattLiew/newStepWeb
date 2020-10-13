@@ -28,6 +28,15 @@
     color: #212b35;
 }
 
+.blog__header-sm h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+    margin: 0;
+    color: #212b35;
+}
+
 /* cards */
 
 .cards {
@@ -55,6 +64,10 @@
 
 .card--2 .card__img, .card--2 .card__img--hover {
     background-image: url('../assets/ds/bg8.jpg');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('../assets/ds/bg9.jpg');
 }
 
 .card__img {
@@ -95,13 +108,30 @@ top: 0;
   margin-bottom: 30px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
-  width: 50%;
+  /*width: 50%;*/
+  flex: 33.33%;
+  max-width: 33.33%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
-.card:hover {
+
+.prodcard {
+  margin-right: 25px;
+  margin-bottom: 30px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  /*width: 50%;*/
+  flex: 50%;
+  max-width: 50%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover,
+.prodcard:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
 }
@@ -141,16 +171,116 @@ border-bottom-right-radius: 12px;
     color: #AD7D52;
 }
 
-.card:hover .card__img--hover {
+.card:hover .card__img--hover,
+.prodcard:hover .card__img--hover{
     height: 100%;
     opacity: 0.3;
 }
 
-.card:hover .card__info {
+.card:hover .card__info,
+.prodcard:hover .card__info{
     background-color: transparent;
     position: relative;
 }
 
-.card:hover .card__info-hover {
+.card:hover .card__info-hover,
+.prodcard:hover .card__info-hover {
     opacity: 1;
+}
+
+/*Products*/
+.products__kiosk-container {
+  position: relative;
+  padding-top: 60px;
+}
+
+.products__kiosk-inner {
+  max-width: 1200px;
+  position: relative;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.products__kiosk-header {
+  text-align: center;
+}
+
+.products__kiosk-img {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.products__kiosk-img img {
+  width: 65%;
+  position: relative;
+}
+
+.products__kiosk-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.products__kiosk-col {
+  flex: 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding:30px;
+  align-self: center;
+}
+
+.products__kiosk-col ul li,
+.products__kiosk-text ul li{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.products__kiosk-col p{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.products__kiosk-col h2{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 0 10px;
+    letter-spacing: 0.1em;
+}
+
+.products__kiosk-tb-inner {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.products__kiosk-table table {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    table-layout: fixed;
+}
+
+.products__kiosk-table td {
+  padding-bottom:10px; 
+}
+
+.products__kiosk-table td,
+.products__kiosk-table th{
+border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.prodcard--1 .card__img, .prodcard--1 .card__img--hover {
+    background-image: url('../assets/products/kiosk/k1.jpg');
+}
+
+.prodcard--2 .card__img, .prodcard--2 .card__img--hover {
+    background-image: url('../assets/products/led/led2.jpg');
 }

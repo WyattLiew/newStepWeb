@@ -244,7 +244,7 @@ nav {
 
 .helloPage__text p {
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	color: #1c1b1d;
 	text-align: left;
 	font-size: 1.4rem;
@@ -338,7 +338,15 @@ nav {
 	left: 10%;
 }
 
-.landingPage__cap-header span{
+.landingPage__cap-header h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+}
+
+/*.landingPage__cap-header span{
 	font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -353,7 +361,7 @@ nav {
 .landingPage__cap-header span:nth-child(2) {
 	color: #8e8e8e;
 	font-size: 80px;
-}
+}*/
 
 
 /* landing page side menu*/
@@ -634,7 +642,7 @@ border-left: 20px solid #7F65BC !important;
 }
 
 .landingPage__brands-container img {
-	margin: 3rem 5rem;
+	margin: 3rem 0rem;
 	width: 80%;
 	height: 50%;
 }
@@ -644,15 +652,20 @@ border-left: 20px solid #7F65BC !important;
 	text-align: center;
 }
 
-.landingPage__brands-header h2{
+.landingPage__brands-header h2,
+.products__kiosk-header h2{
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 2.5rem;
 	text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     font-weight: 600;
 }
 
 /* landingPage__testimonials*/
+
+.testimonial__sm {
+	display: none;
+}
 
 .landingPage__testimonials {
 	padding: 40px 0;
@@ -672,8 +685,10 @@ border-left: 20px solid #7F65BC !important;
 }
 
 .testimonial__col {
-	flex: 33.33%;
-	max-width: 33.33%;
+	/*flex: 33.33%;
+	max-width: 33.33%;*/
+	flex: 50%;
+	max-width: 100%;
 	box-sizing: border-box;
 	padding:15px;
 }
@@ -1096,4 +1111,97 @@ input[value="Send"] {
 
 .workwithus__bottomform {
 	text-align: left;
+}
+
+/* temp our service*/
+
+.circle__sm {
+	display: none;
+}
+
+.circle__inner {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
+	display: block;
+}
+
+.circle__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.circle__col {
+	flex: 33.33%;
+	max-width: 33.33%;
+	box-sizing: border-box;
+	padding:15px;
+	text-align: -webkit-center;
+}
+
+.circle_m1 {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+
+.circle_color_1 {
+	border: 2px solid #4782BC;
+}
+.circle_color_2 {
+	border: 2px solid #43D1D2;
+}
+.circle_color_3 {
+	border: 2px solid #7F65BC;
+}
+
+.circle_m1_header {
+	position: relative;
+	text-align: center;
+	top: 20%;
+}
+
+.circle_m1_header h2{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 600;
+	margin:0;
+}
+
+.circle_m2_header {
+	position: relative;
+	text-align: center;
+	top: 10px;
+}
+
+.circle_m2_header ul{
+	margin:0;
+	padding: 10px;
+}
+
+.circle_m2_header ul li{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	list-style: none;
+	font-size: 18px;
+	padding: 3px;
+}
+
+/*product page transition*/
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
 }

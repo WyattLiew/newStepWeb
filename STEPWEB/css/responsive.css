@@ -47,6 +47,10 @@
 
 @media only screen and (max-width: 600px) {
 
+  .br__display {
+    display: none;
+  }
+
 /* landingPage__capabilities*/
 .landingPage__capabilities-container {
   width: 100%;
@@ -114,7 +118,8 @@
 
 
 .cap__container {
-  display: none;
+  /*display: none;*/
+  padding-top: 20px;
 }
 }
 
@@ -153,7 +158,7 @@
 @media screen and (max-width: 600px) {
   .testimonial__col {
     flex: 100%;
-    max-width: 100%;
+    max-width: 80% !important;
   } 
 
   .globalImpact__col {
@@ -173,6 +178,24 @@
   flex: 100%;
   max-width: 100% !important;
 }
+
+.circle__col {
+  flex: 100%;
+  max-width: 100% !important;
+  padding:0;
+}
+
+.paging__col {
+    flex: 100%;
+    max-width: 100% !important;
+}
+
+.products__kiosk-col {
+  flex: 100%;
+  max-width: 100% !important;
+  padding: 0px;
+}
+
 .about__aboutusheader {
     max-width: 100% !important;
     flex: 100%;
@@ -190,7 +213,7 @@
 @media screen and (max-width: 960px) {
   .testimonial__col {
     flex: 100%;
-    max-width: 80%;
+    max-width: 100%;
   }  
 
   .globalImpact__col {
@@ -205,8 +228,24 @@
 
 .article__col {
   flex: 100%;
-  max-width: 80%;
+  max-width: 100%;
 }
+
+.circle__col {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.paging__col {
+    flex: 100%;
+    max-width: 80%;
+}
+
+.products__kiosk-col {
+  flex: 100%;
+  max-width: 100%;
+}
+
 
 .about__aboutusheader {
     max-width: 80%;
@@ -220,18 +259,59 @@
 
 .cap__col {
   flex: 100%;
-  max-width: 800%;
+  max-width: 80%;
 }
+
+.card {
+    flex: 100%;
+    max-width: 80%;
+  }
+  .prodcard {
+    flex: 100%;
+    max-width: 80%;
+  }
 }
 
 /*landing page */
+ @media screen and (max-width: 1024px) {
+  .landingPage__hello-container {
+    height: 100%;
+  }
+  .landingPage__hello-vertivalLine {
+     margin-left: 0; 
+}
+
+}
  @media screen and (max-width: 1000px) {
   .landingPage__hello-header {
      margin-left: 0%; 
     padding-left: 20px;
 }
-.landingPage__hello-vertivalLine {
-     margin-left: 0; 
+
+.circle__sm {
+  display: block;
+}
+
+.circle__inner {
+  display: none;
+}
+
+.circle_color_1,
+.circle_color_2,
+.circle_color_3 {
+  margin: auto;
+}
+
+.testimonial__sm {
+  display: block;
+}
+
+.testimonial__body {
+  padding: 5% 5% 5%;
+}
+
+.testimonial__row {
+  display: none;
 }
 }
 
@@ -283,6 +363,7 @@
     font-size: 40px;
     padding: 20px;
     font-weight: 600;
+    padding-bottom: 0;
   }
   .landingPage__hello-vertivalLine {
     margin-left: 0;
@@ -293,8 +374,9 @@
      height: 100%;
 }
 .helloPage__text p {
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px;
+    letter-spacing: 0.1em;
 }
 .helloPage__button {
     position: relative;
@@ -303,13 +385,13 @@
      padding:20px;
 }
 
-.landingPage__cap-header span:nth-child(1) {
+/*.landingPage__cap-header span:nth-child(1) {
     font-size: 30px;
 }
 
 .landingPage__cap-header span:nth-child(2) {
     font-size: 40px;
-}
+}*/
 
 .landingPage__cap-header {
     left: 0%;
@@ -327,7 +409,13 @@
      text-align: left;
 
 }
-.landingPage__brands-header h2 {
+.landingPage__brands-header h2,
+.products__kiosk-header h2 {
+    font-size: 22px;
+    letter-spacing: 0.1em;
+}
+
+.landingPage__cap-header h2 {
     font-size: 22px;
     letter-spacing: 0.1em;
 }
@@ -348,17 +436,59 @@
      padding: 0; 
 }
 
+.testimonial__sm {
+  display: block;
+}
+
+.testimonial__body {
+  padding: 5% 5% 5%;
+}
+
+.testimonial__row {
+  display: none;
+}
+
 .pd-20-sm h2{
   padding:0 20px;
 }
 
 .landingPage__globalText p {
-    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.3px;
 }
 .landingPage__globalImpact {
     padding: 0; 
 }
+
+.circle_m1_header h2 {
+  font-size: 22px;
  }
+
+ .circle_m2_header ul li {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+
+ }
+
+.circle_m1 {
+  position: relative;
+}
+
+.circle__sm {
+  display: block;
+}
+
+.circle__inner {
+  display: none;
+}
+
+.circle_color_1,
+.circle_color_2,
+.circle_color_3 {
+  margin: auto;
+}
+}
 
 /*about us*/
 @media screen and (max-width: 960px) {
@@ -400,7 +530,7 @@
   display: none;
 }
 .core__aboutusheader h1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .about__maintext {
@@ -410,7 +540,7 @@
 }
 
 .about__aboutusheader p:nth-child(1) {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .about__aboutusheader p:nth-child(2),
@@ -424,7 +554,7 @@
 }
 
 .content h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .content p {
@@ -453,6 +583,15 @@
 }
 
 /*articles*/
+@media screen and (max-width: 850px) {
+  .blog__wrapper {
+    padding-left: 20px;
+  }
+  .products__kiosk-img img {
+    width: 100%;
+}
+  }
+
   @media screen and (max-width: 600px) {
   .blog__wrapper {
     padding-left: 20px;
@@ -470,24 +609,41 @@
   }
 
   .card {
-    width: 70%;
+    flex: 70%;
+    max-width: 70%;
+  }
+  .prodcard {
+    flex: 70%;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .card {
+    flex: 70%;
+    max-width: 70%;
+  }
+  .prodcard {
+    flex: 70%;
+    max-width: 70%;
   }
 }
 
 /* ds */
- @media screen and (max-width: 1000px) {
+ @media screen and (max-width: 1024px) {
 
 .ds__mainContainer{
   /*background-position: center;*/
 }
 .ds__mainHeader h2 {
     letter-spacing: 0.1em;
-     left: 20%; 
+     left: 5%; 
     padding: 20px;
     font-size: 40px;
 }
 .ds__main-vertivalLine {
-     left: 20%;
+     left: 8%;
 }
 .ds__main-bar {
     border-left: 10px solid #1c1b1d;
@@ -709,10 +865,54 @@
 }
 }
 
+/* products kiosk*/
+ @media only screen and (max-width: 812px) {
+
+  .products__kiosk-img img {
+    width: 100%;
+  }
+
+   .products__kiosk-col ul li,
+   .products__kiosk-text ul li {
+    font-size: 16px;
+  }
+
+  .products__kiosk-header{
+  text-align: left;
+ }
+
+  .products__kiosk-table {
+     font-size: 14px; 
+     padding: 0px; 
+     letter-spacing: 0; 
+}
+  .products__kiosk-table  table tbody tr td{
+     font-size: 14px !important; 
+     -webkit-text-size-adjust: none;
+}
+
+.products__kiosk-tb-inner{
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  padding-bottom: 40px;
+ }
+
+ .blog__header-sm h2 {
+  font-size: 22px;
+}
+.products__kiosk-table th {
+  width: 100px;
+ }
+}
+
+
 /*footer*/
   @media only screen and (max-width: 934px) {
     .footer {
       height: auto;
+      margin-top: 50px;
     }
 
     .footer .footer-content .footer__logo img {

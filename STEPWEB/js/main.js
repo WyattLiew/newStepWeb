@@ -22,7 +22,7 @@ $(".global__counter").counterUp({delay:30,time:1500});
 // const swup = new Swup();
 
 
-var countrylist = ["Singapore", "Malaysia","Vietnam","Thailand","Combodia", "Hong Kong","Macau","China",
+var countrylist = ["Singapore", "Malaysia","Vietnam","Thailand","Cambodia", "Hong Kong","Macau","China",
                     "South Korea","Japan","New Zealand", "Australia","Guam","Saipan","Brunei"];
 
 var countries = document.getElementById("country");
@@ -51,10 +51,10 @@ function startTimer() {
   }, 1500);
 }
 
-
-
-
-
-
+//back to top
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
